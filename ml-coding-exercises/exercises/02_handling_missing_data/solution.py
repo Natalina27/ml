@@ -29,7 +29,9 @@ X[:, 1:-1] = imputer.fit_transform(X[:, 1:-1])
 
 
 # Print the updated matrix of features
-print(dataset.isnull().sum())
+print(np.isnan(X).sum(axis=0))
 print(X)
 print(y)
+print(X[:5])
+print(X.shape)
 
